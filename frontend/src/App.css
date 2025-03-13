@@ -1,0 +1,56 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.app-container {
+  @apply min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-500 to-blue-700 text-white p-4;
+}
+
+.title {
+  @apply text-4xl font-bold mb-6 drop-shadow-lg text-center;
+}
+
+.input-container {
+  @apply w-full max-w-lg p-6 bg-white/30 backdrop-blur-lg rounded-2xl shadow-xl text-gray-900;
+}
+
+.input-field {
+  @apply w-full p-3 border border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition mb-4;
+}
+
+.sentence-list {
+  @apply flex flex-wrap gap-2 mb-4;
+}
+
+.sentence-button {
+  @apply px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition shadow-md;
+}
+
+.submit-button {
+  @apply w-full p-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition font-semibold shadow-lg;
+}
+
+/* Popup Styles */
+.popup-overlay {
+  @apply fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 px-4;
+}
+
+.popup {
+  @apply bg-white p-6 rounded-2xl shadow-xl w-full max-w-sm text-gray-900;
+}
+
+.popup-title {
+  @apply text-xl font-semibold mb-4 text-center;
+}
+
+.popup-content {
+  @apply space-y-2;
+}
+
+.popup-text {
+  @apply p-3 bg-gray-100 rounded-lg;
+}
+
+.popup-close {
+  @apply mt-4 w-full p-3 bg-red-500 text-white rounded-lg hover:bg-red-600 transition font-semibold;
+}
